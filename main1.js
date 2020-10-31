@@ -1,72 +1,28 @@
 $(document).ready(function() {
-    $(".question").click(function() {
-        //Test 1 - Working
-        /* alert("Almost There"); */
-        //Test 2 - Working
-        /* $(".icon").css("border","1px solid black"); */
-        $(this).toggleClass("bold");
-        $(this, "img").toggleClass("rotate"); //Working but not the intended way
-
+    $("#qCont1").click(function() {
+        $("#question1").toggleClass("bold");
+        $("#ans1").toggle("blind", 600);
+        $("#icon1").toggleClass("rotate");
     });
-
-    $(".icon").click(function() {
-        //Test 1 - Working
-        /* alert("Almost"); */
-        //Test 2 - Working
-        /* $(".question").css("border","1px solid black"); */
-        $(this).toggleClass("rotate"); //Working
+    $("#qCont2").click(function() {
+        $("#question2").toggleClass("bold");
+        $("#ans2").toggle("blind", 600);
+        $("#icon2").toggleClass("rotate");
+    });
+    $("#qCont3").click(function() {
+        $("#question3").toggleClass("bold");
+        $("#ans3").toggle("blind", 600);
+        $("#icon3").toggleClass("rotate");
+    });
+    $("#qCont4").click(function() {
+        $("#question4").toggleClass("bold");
+        $("#ans4").toggle("blind", 600);
+        $("#icon4").toggleClass("rotate");
+    });
+    $("#qCont5").click(function() {
+        $("#question5").toggleClass("bold");
+        $("#ans5").toggle("blind", 600);
+        $("#icon5").toggleClass("rotate");
     });
 });
 
-/* document.querySelectorAll("qContainer").addEventListener("click", function() {
-    document
-}); */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* const questions = document.querySelectorAll("qna");
-
-questions.forEach((q) => {
-    const icon = q.querySelector("icon");
-    const title = q.querySelector("question");
-
-    icon.classList.toggle("rotate");
-
-    //Event Listener for the questions.
-    title.addEventListener("click", () => {
-        showAnswer(); 
-        
-        //For Trial Purposes - Even this won't work
-        alert("hey");
-    });
-
-    //Event Listener for Buttons.
-    icon.addEventListener("click", () => {
-        showAnswer();
-    });
-
-    function showAnswer() {
-        questions.forEach((item) => {
-            if (item != q) {
-                item.classList.remove("visible");
-            }
-        });
-        quest.classList.toggle("visible");
-    }
-
-}); */
